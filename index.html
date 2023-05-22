@@ -5,9 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>We are the Champions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div class="wrapper">
+      <img class="logo__img" src="assets/freddie.png" alt="Freddie Mercury" />
+      <h1 class="logo__title">We are the Champions</h1>
+      <form action="" class="form">
+        <textarea
+          class="form__endorsement"
+          placeholder="Write your endorsement here"
+        ></textarea>
+        <button class="form__btn" type="submit">Publish</button>
+      </form>
+      <h2 class="endorsements__title">- Endorsements -</h2>
+      <ul class="endorsements__list">
+        <li class="endorsements__card">
+          <p>
+            Hi Bob! Your React Router course is so good. The students are going
+            to LOVE IT. I’m so excited for the launch :) 🔥 Per
+          </p>
+        </li>
+        <li class="endorsements__card">
+          <p>
+            Abdellah! That transcription feature you completed for Scrimba 3.0
+            is amazing. I know you’ve been working hard on it for several months
+            now. 👏👏👏 Really good work 🙌 From Sindre
+          </p>
+        </li>
+      </ul>
+    </div>
     <script src="js/main.js"></script>
   </body>
 </html>

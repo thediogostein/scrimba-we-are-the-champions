@@ -1,0 +1,102 @@
+:root {
+  --gray-900: #1b1924;
+  --gray-700: #444059;
+  --gray-500: #aaaaaa;
+  --white: #ffffff;
+  --accent-1: #28a9f1;
+  --accent-2: hsl(201, 88%, 62%);
+
+  --fs-100: 0.75rem; /* 12px */
+  --fs-200: 0.95rem; /* 15.2px */
+  --fs-300: 1.25rem; /* 20px */
+  --fs-400: 1.375rem; /* 22px */
+  --fs-500: 1.563rem; /* 25px */
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--gray-900);
+  color: var(--white);
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: auto;
+  max-width: 25rem;
+  padding: 2rem 1rem 0;
+}
+
+.logo__img {
+  max-width: 102px;
+}
+
+.logo__title {
+  font-size: var(--fs-500);
+}
+
+.form {
+  width: 100%;
+}
+
+.form__endorsement,
+.form__btn {
+  font-family: inherit;
+}
+
+.form__endorsement {
+  width: 100%;
+  min-height: 8rem;
+  padding: 0.75rem;
+  background-color: var(--gray-700);
+  border: none;
+  resize: none;
+  color: var(--gray-500);
+  font-size: var(--fs-200);
+  margin-bottom: 0.5rem;
+}
+
+.form__btn {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--accent-1);
+  border: none;
+  border-radius: 8px;
+  font-size: var(--fs-400);
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.form__btn:hover,
+.form__btn:focus {
+  background-color: var(--accent-2);
+}
+
+.endorsements__title {
+  font-size: var(--fs-300);
+}
+
+.endorsements__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.endorsements__card {
+  background-color: var(--white);
+  color: var(--gray-900);
+  padding: 1rem;
+  border-radius: 8px;
+}
