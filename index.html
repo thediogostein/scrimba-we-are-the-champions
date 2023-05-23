@@ -17,30 +17,18 @@
     <div class="wrapper">
       <img class="logo__img" src="assets/freddie.png" alt="Freddie Mercury" />
       <h1 class="logo__title">We are the Champions</h1>
-      <form action="" class="form">
+      <form action="" class="form" id="form-el">
         <textarea
+          id="endorsement"
           class="form__endorsement"
           placeholder="Write your endorsement here"
+          required
         ></textarea>
         <button class="form__btn" type="submit">Publish</button>
       </form>
       <h2 class="endorsements__title">- Endorsements -</h2>
-      <ul class="endorsements__list">
-        <li class="endorsements__card">
-          <p>
-            Hi Bob! Your React Router course is so good. The students are going
-            to LOVE IT. I’m so excited for the launch :) 🔥 Per
-          </p>
-        </li>
-        <li class="endorsements__card">
-          <p>
-            Abdellah! That transcription feature you completed for Scrimba 3.0
-            is amazing. I know you’ve been working hard on it for several months
-            now. 👏👏👏 Really good work 🙌 From Sindre
-          </p>
-        </li>
-      </ul>
+      <ul class="endorsements__list" id="output-el"></ul>
     </div>
-    <script src="js/main.js"></script>
+    <script src="js/main.js" type="module"></script>
   </body>
 </html>
